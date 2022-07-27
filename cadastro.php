@@ -6,9 +6,6 @@ $nome = $_POST['nome'];
 $login = $_POST['login'];
 $senha = $_POST['senha'];
 $ativo = $_POST['ativo'];
-//$cancelar = $_POST['Cancelar'];
-var_dump($_POST);
-die();
 
 $query_select = "SELECT LOGIN FROM usuarios WHERE LOGIN = '$login'";
 $select = mysqli_query($connect,$query_select);
